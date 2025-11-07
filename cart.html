@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Cart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4c8d1;
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+
+    h2 {
+      
+      font-size: 28px;
+      color: #5D3B42;
+    }
+
+    .corner-home-btn {
+      display: inline-block;
+    padding: 6px 12px;
+    background-color: #f2cfd6f6;
+    color: #5D3B42;
+    border:#5D3B42 1px solid;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    }
+
+    .corner-home-btn:hover {
+      background-color: #B58892;
+    }
+
+    .cart-items {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .cart-item {
+      background: #fff;
+      border: #5D3B42 2px solid;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .cart-item:hover {
+      transform: scale(1.02);
+    }
+
+    .cart-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .cart-item p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .cart-item button {
+      background: #e74c3c;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cart-item button:hover {
+      background: #c0392b;
+    }
+
+    .checkout {
+      
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .checkout p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .checkout button {
+      background: #27ae60;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: #5D3B42 1px solid;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .checkout button:hover {
+      background: #1e8449;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>🛒 Your Cart</h2>
+    <a href="Home.html" class="corner-home-btn">Home</a>
+  </header>
+
+  <section class="cart-items">
+    <div class="cart-item">
+      <h3>Primer</h3>
+      <p>Price: ₹999</p>
+      <button>Remove from Cart</button>
+    </div>
+    <div class="cart-item">
+      <h3>Eye Masks</h3>
+      <p>Price: ₹799</p>
+      <button>Remove from Cart</button>
+    </div>
+
+    <div class="checkout">
+      <p><strong>Total:</strong> ₹1798</p>
+      <button>Proceed to Checkout</button>
+    </div>
+  </section>
+</body>
+</html>

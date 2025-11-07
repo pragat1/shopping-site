@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Orders</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f4c8d1;
+      padding: 20px;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 28px;
+      color:  #5D3B42;
+    }
+
+    .corner-home-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #f2cfd6f6;
+    color: #5D3B42;
+    border:#5D3B42 1px solid;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    }
+
+    .corner-home-btn:hover {
+      background-color: #B58892;
+    }
+
+    .order-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .order-item {
+      background-color: white;
+      padding: 20px;
+      border: #5D3B42 2px solid;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .order-item:hover {
+      transform: scale(1.015);
+    }
+
+    .order-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #34495e;
+    }
+
+    .order-item p {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 14px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    .delivered {
+      background-color: #2ecc71;
+      color: white;
+    }
+
+    .in-transit {
+      background-color: #f39c12;
+      color: white;
+    }
+
+    /* Add other status classes as needed */
+  </style>
+</head>
+<body>
+  <header>
+    <h2>📦 Your Orders</h2>
+    <a href="Home.html" class="corner-home-btn">Home</a>
+  </header>
+
+  <section class="order-list">
+    <div class="order-item">
+      <h3>Velvet lipstick</h3>
+      <p>Order Date: 10 July 2025</p>
+      <p>Status: <span class="status delivered">Delivered</span></p>
+    </div>
+    <div class="order-item">
+      <h3>Hydrating Serum</h3>
+      <p>Order Date: 09 July 2025</p>
+      <p>Status: <span class="status in-transit">in-transit</span></p>
+    </div>
+    <!-- Add more order items as needed -->
+  </section>
+</body>
+</html>

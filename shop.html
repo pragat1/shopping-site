@@ -1,0 +1,150 @@
+<!-- shop.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop - Beauty Bliss</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; background: #F7F6F3; color: #5D3B42; margin: 0; }
+    header { background: #F4C8D1; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .logo { font-family: 'Allura', cursive; font-size: 24px; font-weight: bold; }
+    nav a { margin-left: 20px; color: #5D3B42; text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+    nav a:hover { color: #B58892; }
+
+    .container { padding: 60px 40px; text-align: center; }
+    .container h1 { font-family:'Alex Brush', cursive; font-size: 36px; margin-bottom: 30px; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
+
+    .product-card {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .product-card p {
+      font-size: 16px;
+      color: #8B8276;
+    }
+
+    .product-card button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      background: #5D3B42;
+      color: white;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .product-card button:hover {
+      background: #B58892;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Beauty Bliss</div>
+    <nav>
+      <a href="Home.html">Home</a>
+      <a href="orders.html">orders</a>
+      <a href="cart.html">cart</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>Shop Our Collection</h1>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="product1.jpg" alt="Product 1">
+        <h3>Foundation</h3>
+        <p>₹999</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="product2.jpg" alt="Product 2">
+        <h3>Lip Gloss</h3>
+        <p>₹599</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="product3.jpg" alt="Product 3">
+        <h3>Velvet Liptint</h3>
+        <p>₹1199</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="product4.jpg" alt="Product 4">
+        <h3>Blush</h3>
+        <p>₹899</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="product5.jpg" alt="Product 5">
+        <h3>setting powder</h3>
+        <p>₹1099</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="product6.jpg" alt="Product 6">
+        <h3>Eyeshadow Palette</h3>
+        <p>₹849</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="product7.jpg" alt="Product 7">
+        <h3>Purple Liptint</h3>
+        <p>₹799</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="product8.jpg" alt="Product 8">
+        <h3>Brown Liptint</h3>
+        <p>₹1299</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="product9.jpg" alt="Product 9">
+        <h3>Primer</h3>
+        <p>₹699</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="product10.jpg" alt="Product 10">
+        <h3>Blush</h3>
+        <p>₹899</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
